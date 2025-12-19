@@ -1,4 +1,5 @@
 import { useAppContext } from '../../hooks/useAppContext';
+import heroBanner from '../../assets/images/openkotor_hero_banner.jpg';
 
 export default function Home() {
   const { state } = useAppContext();
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="hero">
+      <section className="hero" style={{ backgroundImage: `url(${heroBanner})` }}>
         <div className="container hero-grid">
           <div>
             <span className="badge"><span className="nowrap">KotOR I & II</span> <span className="sep">•</span> Modding & Reverse‑Engineering</span>
